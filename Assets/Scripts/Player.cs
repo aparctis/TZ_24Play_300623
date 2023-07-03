@@ -12,13 +12,12 @@ public class Player : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] PlayerMover playerMover;
 
-    [SerializeField] GameObject loseScreen;
-
     [SerializeField] GameObject cubeHolder;
 
     public static Player instance;
-
+    //on death
     [SerializeField] CameraShaker cameraShaker;
+    [SerializeField] GameObject loseScreen;
 
     private void Awake()
     {
@@ -45,6 +44,7 @@ public class Player : MonoBehaviour
         RagdollActivate(true);
         playerMover.SetMoveAble(false);
         cameraShaker.BigShake();
+        loseScreen.SetActive(true);
     }
 
 

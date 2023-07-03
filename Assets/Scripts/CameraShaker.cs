@@ -6,12 +6,12 @@ public class CameraShaker : MonoBehaviour
 {
     public void SmallShake()
     {
-        StartCoroutine(Shaker(0.1f));
+        StartCoroutine(Shaker(0.05f));
     }
 
     public void BigShake()
     {
-        StartCoroutine(Shaker(0.2f));
+        StartCoroutine(Shaker(0.15f));
 
     }
     private IEnumerator Shaker(float shakeOfset)
@@ -21,7 +21,7 @@ public class CameraShaker : MonoBehaviour
         Vector3 left = new Vector3(center.x - shakeOfset, center.y, center.z);
 
         int shakeCount = 3;
-        float shakespeed = 3.5f;
+        float shakespeed = 7.5f;
 
         Handheld.Vibrate();
 

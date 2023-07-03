@@ -919,13 +919,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2110060125}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2110060127}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2396,9 +2396,9 @@ MonoBehaviour:
   - {fileID: 530466995}
   animator: {fileID: 1356300077}
   playerMover: {fileID: 2076399479046963831}
-  loseScreen: {fileID: 2125390017}
   cubeHolder: {fileID: 1238489293}
   cameraShaker: {fileID: 330585548}
+  loseScreen: {fileID: 2125390017}
 --- !u!65 &2110060128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2654,7 +2654,7 @@ PrefabInstance:
     - target: {fileID: 3371303080675508205, guid: 8cb7b8e8576672248afdcc573e4e99a2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4271051864664492050, guid: 8cb7b8e8576672248afdcc573e4e99a2,
         type: 3}
@@ -2734,7 +2734,7 @@ PrefabInstance:
     - target: {fileID: 8414803871114984795, guid: 8cb7b8e8576672248afdcc573e4e99a2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cb7b8e8576672248afdcc573e4e99a2, type: 3}
